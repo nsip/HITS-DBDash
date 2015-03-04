@@ -1,0 +1,11 @@
+Multiple Database Support
+
+	* TOKEN - or some form of Input ID to get started
+	* Use Token to request XMLAudit Log entries
+	* Use Token to determine what the REAL database is, and use it for View command
+	* Use Token to determine Use Case and Report to execute
+
+USER INTERFACE
+
+	* Make back buttons work - getting a proper #tags, but not actually going back
+

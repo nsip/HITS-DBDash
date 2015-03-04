@@ -1,0 +1,57 @@
+[8241] error @0.032279> [hit #10]request to GET /audit/HITS crashed: DBI connect('database=identity;host=sifau.cspvdo7mmaoe.ap-southeast-2.rds.amazonaws.com','sifau',...) failed: Unknown database 'identity' at /usr/share/perl5/Dancer/Plugin/Database.pm line 205 in /usr/share/perl5/Dancer/Handler.pm l. 98
+[8327] error @0.002383> [hit #10]request to GET /audit/HITS crashed: install_driver(mysqlPP) failed: Can't locate DBD/mysqlPP.pm in @INC (@INC contains: /home/scottp/nsip/HITS-DevDash/lib /etc/perl /usr/local/lib/perl/5.14.2 /usr/local/share/perl/5.14.2 /usr/lib/perl5 /usr/share/perl5 /usr/lib/perl/5.14 /usr/share/perl/5.14 /usr/local/lib/site_perl . CODE(0x24a9540) CODE(0x24a9450)) at (eval 146) line 3.
+Perhaps the DBD::mysqlPP perl module hasn't been fully installed,
+or perhaps the capitalisation of 'mysqlPP' isn't right.
+Available drivers: DBM, ExampleP, File, Gofer, Proxy, Sponge, mysql.
+ at /usr/share/perl5/Dancer/Plugin/Database.pm line 205 in /usr/share/perl5/Dancer/Handler.pm l. 98
+[8379] error @0.030501> [hit #10]request to GET /audit/HITS crashed: DBD::mysql::st execute failed: called with 1 bind variables when 0 are needed at /home/scottp/nsip/HITS-DevDash/lib/HITS/DevDash.pm line 100. in /usr/share/perl5/Dancer/Handler.pm l. 98
+[14221] error @0.001145> [hit #14]No DB settings for SIF in /usr/share/perl5/Dancer/Plugin/Database.pm l. 16
+[14221] error @0.001500> [hit #14]request to GET /view crashed: Can't call method "tables" on an undefined value at /home/scottp/nsip/HITS-DevDash/lib/HITS/DevDash/View.pm line 15. in /usr/share/perl5/Dancer/Handler.pm l. 98
+[14221] error @0.000758> [hit #28]No DB settings for SIF in /usr/share/perl5/Dancer/Plugin/Database.pm l. 16
+[14221] error @0.001067> [hit #28]request to GET /view crashed: Can't call method "tables" on an undefined value at /home/scottp/nsip/HITS-DevDash/lib/HITS/DevDash/View.pm line 15. in /usr/share/perl5/Dancer/Handler.pm l. 98
+[14221] error @0.000906> [hit #42]No DB settings for SIF in /usr/share/perl5/Dancer/Plugin/Database.pm l. 16
+[14221] error @0.001250> [hit #42]request to GET /view crashed: Can't call method "tables" on an undefined value at /home/scottp/nsip/HITS-DevDash/lib/HITS/DevDash/View.pm line 15. in /usr/share/perl5/Dancer/Handler.pm l. 98
+[14281] error @0.001198> [hit #2]No DB settings for SIF in /usr/share/perl5/Dancer/Plugin/Database.pm l. 16
+[14281] error @0.001587> [hit #2]request to GET /view crashed: Can't call method "tables" on an undefined value at /home/scottp/nsip/HITS-DevDash/lib/HITS/DevDash/View.pm line 15. in /usr/share/perl5/Dancer/Handler.pm l. 98
+[14221] error @0.000983> [hit #55]No DB settings for SIF in /usr/share/perl5/Dancer/Plugin/Database.pm l. 16
+[14221] error @0.001334> [hit #55]request to GET /view crashed: Can't call method "tables" on an undefined value at /home/scottp/nsip/HITS-DevDash/lib/HITS/DevDash/View.pm line 15. in /usr/share/perl5/Dancer/Handler.pm l. 98
+[14221] error @0.000968> [hit #56]No DB settings for SIF in /usr/share/perl5/Dancer/Plugin/Database.pm l. 16
+[14221] error @0.001302> [hit #56]request to GET /view crashed: Can't call method "tables" on an undefined value at /home/scottp/nsip/HITS-DevDash/lib/HITS/DevDash/View.pm line 15. in /usr/share/perl5/Dancer/Handler.pm l. 98
+[14221] error @0.000731> [hit #57]No DB settings for SIF in /usr/share/perl5/Dancer/Plugin/Database.pm l. 16
+[14221] error @0.001027> [hit #57]request to GET /view crashed: Can't call method "tables" on an undefined value at /home/scottp/nsip/HITS-DevDash/lib/HITS/DevDash/View.pm line 15. in /usr/share/perl5/Dancer/Handler.pm l. 98
+[14221] error @0.000996> [hit #58]No DB settings for SIF in /usr/share/perl5/Dancer/Plugin/Database.pm l. 16
+[14221] error @0.001489> [hit #58]request to GET /view crashed: Can't call method "tables" on an undefined value at /home/scottp/nsip/HITS-DevDash/lib/HITS/DevDash/View.pm line 15. in /usr/share/perl5/Dancer/Handler.pm l. 98
+[27042] error @0.002643> [hit #51]request to GET /view/StaffPersonal crashed: No valid DB from userToken StaffPersonal at /home/scottp/nsip/HITS-DevDash/lib/HITS/DevDash/View.pm line 23. in /usr/share/perl5/Dancer/Handler.pm l. 98
+[27319] error @0.004973> [hit #15]request to GET /view/76dade97-075e-4def-abf8-16b0e508f6f9/table/StaffPersonal crashed: Can't locate object method "prepare" via package "dbh" (perhaps you forgot to load "dbh"?) at /home/scottp/nsip/HITS-DevDash/lib/HITS/DevDash/View.pm line 58. in /usr/share/perl5/Dancer/Handler.pm l. 98
+[29733] error @0.002399> [hit #20]request to GET /view/HITS crashed: No valid DB from userToken HITS at /home/scottp/nsip/HITS-DevDash/lib/HITS/DevDash/View.pm line 23. in /usr/share/perl5/Dancer/Handler.pm l. 98
+[31296] error @0.002689> [hit #93]request to GET /view/HITS crashed: No valid DB from userToken HITS at /home/scottp/nsip/HITS-DevDash/lib/HITS/DevDash/View.pm line 23. in /usr/share/perl5/Dancer/Handler.pm l. 98
+[31081] error @0.002795> [hit #173]request to GET /view/HITS crashed: No valid DB from userToken HITS at /home/scottp/nsip/HITS-DevDash/lib/HITS/DevDash/View.pm line 23. in /usr/share/perl5/Dancer/Handler.pm l. 98
+[31296] error @0.002694> [hit #113]request to GET /view/HITS crashed: No valid DB from userToken HITS at /home/scottp/nsip/HITS-DevDash/lib/HITS/DevDash/View.pm line 23. in /usr/share/perl5/Dancer/Handler.pm l. 98
+[31081] error @0.001476> [hit #211]request to GET /view/HITS crashed: No valid DB from userToken HITS at /home/scottp/nsip/HITS-DevDash/lib/HITS/DevDash/View.pm line 23. in /usr/share/perl5/Dancer/Handler.pm l. 98
+[31081] error @0.001436> [hit #223]request to GET /view/HITS crashed: No valid DB from userToken HITS at /home/scottp/nsip/HITS-DevDash/lib/HITS/DevDash/View.pm line 23. in /usr/share/perl5/Dancer/Handler.pm l. 98
+[18938] error @0.002789> [hit #133]request to GET /view/x crashed: No valid DB from userToken x at /home/scottp/nsip/HITS-DevDash/lib/HITS/DevDash/View.pm line 23. in /usr/share/perl5/Dancer/Handler.pm l. 98
+[23879] error @0.002654> [hit #73]request to GET /view/x crashed: No valid DB from userToken x at /home/scottp/nsip/HITS-DevDash/lib/HITS/DevDash/View.pm line 23. in /usr/share/perl5/Dancer/Handler.pm l. 98
+[30054] error @0.108370> [hit #7]request to GET /view/302001c5-505f-45d1-b575-b739096a63d3 crashed: install_driver(mysqlPP) failed: Can't locate DBD/mysqlPP.pm in @INC (@INC contains: /home/scottp/nsip/sif-au-perl/lib ../sif-au-perl/lib /home/scottp/nsip/HITS-DevDash/lib /etc/perl /usr/local/lib/perl/5.14.2 /usr/local/share/perl/5.14.2 /usr/lib/perl5 /usr/share/perl5 /usr/lib/perl/5.14 /usr/share/perl/5.14 /usr/local/lib/site_perl . CODE(0x2bd3360) CODE(0x2bd3270)) at (eval 308) line 3.
+Perhaps the DBD::mysqlPP perl module hasn't been fully installed,
+or perhaps the capitalisation of 'mysqlPP' isn't right.
+Available drivers: DBM, ExampleP, File, Gofer, Proxy, Sponge, mysql.
+ at /home/scottp/nsip/HITS-DevDash/lib/HITS/DevDash/View.pm line 32 in /usr/share/perl5/Dancer/Handler.pm l. 98
+[30116] error @0.044433> [hit #3]request to GET /report/9 crashed: "export PERL5LIB=~/nsip/HITS-Reports/lib/; perl ~/nsip/HITS-Reports/bin/report 9 ~/nsip/HITS-Reports/TimeTable/in.pl > /tmp/30116.pl" unexpectedly returned exit value 2 at (eval 301) line 13
+ at /home/scottp/nsip/HITS-DevDash/lib/HITS/DevDash/Report.pm line 32 in /usr/share/perl5/Dancer/Handler.pm l. 98
+[30209] error @0.326098> [hit #6]request to GET /report/9 crashed: "export PERL5LIB=~scottp/nsip/HITS-Reports/lib/; perl ~scottp/nsip/HITS-Reports/bin/report 9 ~scottp/nsip/HITS-Reports/TimeTable/in.pl > /tmp/30209.pl" unexpectedly returned exit value 2 at (eval 301) line 13
+ at /home/scottp/nsip/HITS-DevDash/lib/HITS/DevDash/Report.pm line 32 in /usr/share/perl5/Dancer/Handler.pm l. 98
+[30503] error @0.366392> [hit #10]request to GET /report/9 crashed: "export PERL5LIB=/home/scottp/nsip/HITS-Reports/lib/; perl /home/scottp/nsip/HITS-Reports/bin/report 9 /home/scottp/nsip/HITS-Reports/TimeTable/in.pl > /tmp/30503.pl" unexpectedly returned exit value 2 at (eval 301) line 13
+ at /home/scottp/nsip/HITS-DevDash/lib/HITS/DevDash/Report.pm line 34 in /usr/share/perl5/Dancer/Handler.pm l. 98
+[30506] error @0.362479> [hit #3]request to GET /report/9 crashed: "export PERL5LIB=/home/scottp/nsip/HITS-Reports/lib/; perl /home/scottp/nsip/HITS-Reports/bin/report 9 /home/scottp/nsip/HITS-Reports/TimeTable/in.pl > /tmp/30506.pl" unexpectedly returned exit value 2 at (eval 301) line 13
+ at /home/scottp/nsip/HITS-DevDash/lib/HITS/DevDash/Report.pm line 34 in /usr/share/perl5/Dancer/Handler.pm l. 98
+[30625] error @0.363356> [hit #3]request to GET /report/9 crashed: "export PERL5LIB=/home/scottp/nsip/HITS-Reports/lib/; perl /home/scottp/nsip/HITS-Reports/bin/report 9 /home/scottp/nsip/HITS-Reports/TimeTable/in.pl > /tmp/30625.pl" unexpectedly returned exit value 2 at (eval 301) line 13
+ at /home/scottp/nsip/HITS-DevDash/lib/HITS/DevDash/Report.pm line 34 in /usr/share/perl5/Dancer/Handler.pm l. 98
+[30967] error @0.364153> [hit #8]request to GET /report/9 crashed: "export PERL5LIB=/home/scottp/nsip/HITS-Reports/lib/; perl /home/scottp/nsip/HITS-Reports/bin/report 9 /home/scottp/nsip/HITS-Reports/TimeTable/in.pl > /tmp/30967.pl 2> /tmp/30967.err" unexpectedly returned exit value 2 at (eval 301) line 13
+ at /home/scottp/nsip/HITS-DevDash/lib/HITS/DevDash/Report.pm line 34 in /usr/share/perl5/Dancer/Handler.pm l. 98
+[31056] error @0.364973> [hit #1]request to GET /report/9 crashed: "export PERL5LIB=/home/scottp/nsip/HITS-Reports/lib/; perl /home/scottp/nsip/HITS-Reports/bin/report 9 /home/scottp/nsip/HITS-Reports/TimeTable/in.pl > /tmp/31056.pl 2> /tmp/31056.err" unexpectedly returned exit value 2 at (eval 301) line 13
+ at /home/scottp/nsip/HITS-DevDash/lib/HITS/DevDash/Report.pm line 34 in /usr/share/perl5/Dancer/Handler.pm l. 98
+[15642] error @0.118688> [hit #2]request to GET /view/HITS crashed: No valid DB from userToken HITS at /home/scottp/nsip/HITS-DevDash/lib/HITS/DevDash/View.pm line 26. in /usr/share/perl5/Dancer/Handler.pm l. 98
+[5664] error @0.109379> [hit #2]request to GET /view/HITS crashed: No valid DB from userToken HITS at /home/scottp/nsip/HITS-DevDash/lib/HITS/DevDash/View.pm line 26. in /usr/share/perl5/Dancer/Handler.pm l. 98
+[5658] error @0.101837> [hit #17]request to GET /view/HITS crashed: No valid DB from userToken HITS at /home/scottp/nsip/HITS-DevDash/lib/HITS/DevDash/View.pm line 26. in /usr/share/perl5/Dancer/Handler.pm l. 98
+[5665] error @0.002373> [hit #19]request to GET /view/HITS crashed: No valid DB from userToken HITS at /home/scottp/nsip/HITS-DevDash/lib/HITS/DevDash/View.pm line 26. in /usr/share/perl5/Dancer/Handler.pm l. 98
+[12871] error @0.002732> [hit #18]request to GET /view/HITS crashed: No valid DB from userToken HITS at /home/scottp/nsip/HITS-DevDash/lib/HITS/DevDash/View.pm line 26. in /usr/share/perl5/Dancer/Handler.pm l. 98

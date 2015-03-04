@@ -1,0 +1,60 @@
+# This is the main configuration file of your Dancer app
+# env-related settings should go to environments/$env.yml
+# all the settings in this file will be loaded at Dancer's startup.
+
+# Your application's name
+appname: "HITS::DevDash-"
+
+# The default layout to use for your application (located in
+# views/layouts/main.tt)
+layout: "main"
+
+# when the charset is set to UTF-8 Dancer will handle for you
+# all the magic of encoding and decoding. You should not care
+# about unicode within your app when this setting is set (recommended).
+charset: "UTF-8"
+
+# template engine
+# simple: default and very basic template engine
+# template_toolkit: TT
+
+# template: "simple"
+
+# XXX session: "HITS::Identity"
+
+template: "template_toolkit"
+engines:
+  template_toolkit:
+    encoding:  'utf8'
+    start_tag: '[%'
+    end_tag:   '%]'
+
+
+# Old sif.dd.com.au, sifau, sifau, 03_SIS_was_not
+# New sifau.cspvdo7mmaoe.ap-southeast-2.rds.amazonaws.com
+plugins:
+    Database:
+        driver: 'mysqlPP'
+        host: 'sifau.cspvdo7mmaoe.ap-southeast-2.rds.amazonaws.com'
+        database: 'hits_sif3_infra'
+        username: 'sifau'
+        password: '03_SIS_was_not'
+        dbi_params:
+            RaiseError: 1
+            AutoCommit: 1
+        log_queries: 1
+        connections:
+            HITS:
+                driver: 'mysqlPP'
+                host: 'sifau.cspvdo7mmaoe.ap-southeast-2.rds.amazonaws.com'
+                database: 'hits'
+                username: 'sifau'
+                password: '03_SIS_was_not'
+                dbi_params:
+                    RaiseError: 1
+                    AutoCommit: 1
+                log_queries: 1
+
+hits:
+  dsn_template: 'dbi:mysqlPP:database=TEMPLATE;host=sifau.cspvdo7mmaoe.ap-southeast-2.rds.amazonaws.com'
+  report_dir: '/Users/scottp/nsip/HITS-Reports'

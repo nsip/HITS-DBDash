@@ -1,0 +1,44 @@
+# configuration file for production environment
+
+# only log warning and error messsages
+log: "warning"
+
+# log message to a file in logs/
+logger: "file"
+
+# don't consider warnings critical
+warnings: 0
+
+# hide errors 
+show_errors: 0
+
+# cache route resolution for maximum performance
+route_cache: 1
+
+plugins:
+    Database:
+        driver: 'mysql'
+        host: 'sifau.cspvdo7mmaoe.ap-southeast-2.rds.amazonaws.com'
+        database: 'hits_sif3_infra'
+        username: 'sifau'
+        password: '03_SIS_was_not'
+        dbi_params:
+            RaiseError: 1
+            AutoCommit: 1
+        log_queries: 1
+        connections:
+            HITS:
+                driver: 'mysql'
+                host: 'sifau.cspvdo7mmaoe.ap-southeast-2.rds.amazonaws.com'
+                database: 'hits'
+                username: 'sifau'
+                password: '03_SIS_was_not'
+                dbi_params:
+                    RaiseError: 1
+                    AutoCommit: 1
+                log_queries: 1
+
+
+hits:
+  dsn_template: 'dbi:mysql:database=TEMPLATE;host=sifau.cspvdo7mmaoe.ap-southeast-2.rds.amazonaws.com'
+  report_dir: '/home/scottp/nsip/HITS-Reports'
